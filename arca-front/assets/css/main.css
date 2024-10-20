@@ -1,0 +1,48 @@
+main{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 80%;
+    margin: 40px auto;
+    
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 19px;
+        background: #ffffff;
+        box-shadow: 20px 20px 60px #d9d9d9,
+            -20px -20px 60px #ffffff;
+}
+
+.banner-left-text{
+    margin: 0 20px 0 50px;
+}
+.banner-right-text{
+    margin: 0 50px 0 20px;
+}
+
+.banner-title{
+    color: var(--arca-red);
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.banner-description{
+    color: black
+}
+
+.banner-div-img{
+    height: 100%;
+}
+
+section div img{
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}

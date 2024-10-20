@@ -1,12 +1,17 @@
-
 header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+
     position: sticky;
     background-color: var(--arca-red);
     z-index: 999;
     top: 0;
+}
+
+header div {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
 }
 
 header #logo-container {
@@ -43,7 +48,8 @@ header ul li a {
     padding: 10px 15px;
 }
 
-header ul li a:hover, #logo-container:hover {
+header ul li a:hover,
+#logo-container:hover {
     color: var(--arca-red);
     background-color: black;
     border-radius: 5px;
@@ -51,7 +57,7 @@ header ul li a:hover, #logo-container:hover {
     transition: all 0.5s ease;
 }
 
-#logo-container:hover h3{
+#logo-container:hover h3 {
     color: var(--arca-red);
 }
 
@@ -77,5 +83,3 @@ header button:hover {
     font-size: 25px;
     margin: 0;
 }
-
-
