@@ -46,3 +46,8 @@
     color: white;
     font-size: large;
 }
+
+#login-button:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
