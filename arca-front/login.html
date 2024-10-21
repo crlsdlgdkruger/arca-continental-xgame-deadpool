@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/login.css">
     <link rel="icon" href="/assets/images/deadpool_logo.png">
 
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
@@ -55,42 +56,26 @@
         </div>
     </header>
     <main>
-        <!-- banner 1 -->
-        <section class="banner">
-            <div class="banner-left-text">
-                <h3 class="exo-2-logo-font banner-title">Innovación Educativa a Través de la Práctica Empresarial</h3>
-                <p class="exo-2-logo-font banner-description">Como parte de una alianza estratégica entre Arca Continental y
-                    Kruger School X, se fomenta la
-                    colaboración para que los estudiantes participen en casos reales, aplicando y desarrollando sus habilidades
-                    en
-                    un entorno empresarial.</p>
-            </div>
-            <div class="banner-div-img">
-                <img src="/assets/images/colaboracion.png" alt="colaboracion-image" class="banner-image">
-            </div>
-        </section>
-
-        <!-- banner 2 -->
-        <section class="banner">
-            <div class="banner-div-img">
-                <img src="/assets/images/deadpool_logo.png" alt="colaboracion-image" class="banner-image">
-            </div>
-            <div class="banner-right-text">
-                <h3 class="exo-2-logo-font banner-title">Desafíos Empresariales: Compite, Colabora y Crece</h3>
-                <p class="exo-2-logo-font banner-description">Fomentamos la competitividad, el espíritu deportivo y la colaboración entre estudiantes, preparándolos para enfrentar
-                con éxito los desafíos del entorno empresarial.</p>
-            </div>
-        </section>
-
-        <!-- banner 3 -->
-        <section class="banner">
-            <div class="banner-left-text">
-                <h3 class="exo-2-logo-font banner-title">Optimización Empresarial a través de Análisis de Datos</h3>
-                <p class="exo-2-logo-font banner-description">La solución presentada por el equipo <span class="deadpool-font" style="color: var(--arca-red);">deadpool</span> se fundamenta en el análisis de datos, visualizados a través de
-                    un dashboard interactivo, con el objetivo de optimizar la toma de decisiones en las áreas comercial y de producción.</p>
-            </div>
-            <div class="banner-div-img">
-                <img src="/assets/images/dashboard.png" alt="colaboracion-image" class="banner-image">
+        <section>
+            <div id="login-container">
+                <div>
+                    <h3 class="exo-2-logo-font">Iniciar Sesion</h3>
+                </div>
+                <div>
+                    <form onsubmit="login(event)">
+                        <div id="login-form-div">
+                            <div>
+                                <label for="useremail" id="useremail-label" class="exo-2-logo-font">Email</label>
+                                <input type="text" name="useremail" id="useremail-input">
+                            </div>
+                            <div>
+                                <label for="password" id="password-label" class="exo-2-logo-font">Password</label>
+                                <input type="password" name="password-input" id="password-input">
+                            </div>
+                            <button type="submit" id="login-button" class="exo-2-logo-font">Login</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>

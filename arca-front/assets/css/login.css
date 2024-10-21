@@ -1,0 +1,48 @@
+#login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+        background: #ffffff;
+        box-shadow: 20px 20px 60px #d9d9d9,
+            -20px -20px 60px #ffffff;
+}
+
+#login-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-form-div {
+    gap: 20px;
+}
+
+#login-container div h3 {
+    margin-bottom: 20px;
+    color: var(--arca-red);
+    font-size: xx-large;
+}
+
+#useremail-label , #password-label {
+    color: black;
+}
+
+#useremail-input , #password-input {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 0;
+}
+
+#login-button {
+    width: 300px;
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: var(--arca-red);
+    color: white;
+    font-size: large;
+}

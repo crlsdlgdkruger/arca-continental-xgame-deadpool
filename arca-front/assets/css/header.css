@@ -68,15 +68,16 @@ header ul li a:hover,
     color: var(--arca-red);
 }
 
-header button {
+#login {
     padding: 3px 15px;
     background-color: transparent;
     color: black;
     border: 1px solid black;
     cursor: pointer;
+    text-decoration: none;
 }
 
-header button:hover {
+#login:hover {
     background-color: black;
     color: white;
     transition: all 0.5s ease;
