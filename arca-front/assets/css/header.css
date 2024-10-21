@@ -1,12 +1,11 @@
 header {
-
     position: sticky;
     background-color: var(--arca-red);
     z-index: 999;
     top: 0;
 }
 
-header div {
+header #header-container {
     width: 80%;
     display: flex;
     justify-content: space-between;
@@ -15,11 +14,18 @@ header div {
 }
 
 header #logo-container {
+    padding: 6px 10px;
+}
+
+#logo{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    padding: 6px 10px;
+}
+
+header #logo-container h3 {
+    white-space: nowrap;
 }
 
 .exo-2-logo-font {
@@ -35,12 +41,13 @@ header ul {
     display: flex;
     align-items: center;
     padding: 0;
+    margin: 0;
 }
 
 header ul li {
     display: inline;
     list-style: none;
-
+    margin: 10px 0;
 }
 
 header ul li a {
@@ -75,6 +82,21 @@ header button:hover {
     transition: all 0.5s ease;
 }
 
+.menu-collapse-btn {
+    display: none;
+    height: 36px;
+    margin-left: 10px;
+    padding: 0 3px;
+    border: 1px solid black;
+
+}
+
+.menu-collapse-btn img {
+    height: 30px;
+    color: black;
+    fill: currentColor;
+}
+
 .login-font {
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
@@ -82,4 +104,60 @@ header button:hover {
     font-style: normal;
     font-size: 25px;
     margin: 0;
+}
+
+#buttons-container {
+    display: flex;
+    align-items: center;
+}
+
+#menu-toggle:checked ~ #menu {
+    right: 0;
+    transition: all 0.5s ease;
+}
+
+#menu-toggle:checked ~ .menu-collapse-btn .close-menu {
+    display: block;
+    transition: all 0.5s ease;
+}
+
+#menu-toggle:checked ~ .menu-collapse-btn .hamburger-menu {
+    display: none;
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 768px) {
+    
+    #menu {
+        position: absolute;
+        top: 74px;
+        right: -130px;
+        background-color: var(--arca-red);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid black;
+        transition: all 0.5s ease;
+    }
+
+    #menu li:nth-child(2) a {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    #menu ul {
+        flex-direction: column;
+    }
+
+    .menu-collapse-btn {
+        display: flex;
+        align-items: end;
+        
+    }
+
+    header #header-container {
+        width: 90%;
+        flex: 1;
+    }
+
 }

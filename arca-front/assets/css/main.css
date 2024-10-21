@@ -46,3 +46,29 @@ section div img{
     width: auto;
     object-fit: cover;
 }
+
+@media screen and (max-width: 1024px) {
+    main {
+            width: 95%;
+        }
+}
+
+@media screen and (max-width: 860px) {
+    .banner{
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .banner-left-text, .banner-right-text{
+        margin: 0 20px;
+    }
+
+    .banner-div-img{
+        height: 300px;
+    }
+
+    .banner:nth-child(odd){
+        flex-direction: column-reverse;
+    }
+}
