@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arca Dashboard</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/login.css">
-    <link rel="icon" href="/assets/images/deadpool_logo.png">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
+    <link rel="icon" href="./assets/images/Arca_Continental_logo.png">
 
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +29,7 @@
         <div id="header-container">
             <div id="logo-container">
                 <a href="/index.html" id="logo">
-                    <img src="/assets/images/deadpool_logo.png" alt="deadpool_logo" width="40px">
+                    <img src="./assets/images/AC_logo.png" alt="arca_logo" height="40px">
                     <h3 class="exo-2-logo-font">ARCA DASHBOARD</h3>
                 </a>
             </div>
@@ -43,40 +44,23 @@
                 </nav>
             </div>
             <div id="buttons-container">
-                <a href="login.html" class="login-font" id="login">Login</a>
+                <a href="login.html" class="exo-2-logo-font login-font" id="login">Login</a>
                 <label class="menu-collapse-btn" for="menu-toggle">
                     <div class="hamburger-menu">
-                        <img src="/assets/icons/menu.svg" alt="menu-bars">
+                        <img src="./assets/icons/menu.svg" alt="menu-bars">
                     </div>
                     <div class="hidden close-menu">
-                        <img src="/assets/icons/close.svg" alt="close">
+                        <img src="./assets/icons/close.svg" alt="close">
                     </div>
                 </label>
             </div>
         </div>
     </header>
-    <main>
-        <section>
-            <div id="login-container">
-                <div>
-                    <h3 class="exo-2-logo-font">Inicio de Sesion</h3>
-                </div>
-                <div>
-                    <form onsubmit="login(event)">
-                        <div id="login-form-div">
-                            <div>
-                                <label for="useremail" id="useremail-label" class="exo-2-logo-font">Email</label>
-                                <input type="text" name="useremail" id="useremail-input">
-                            </div>
-                            <div>
-                                <label for="password" id="password-label" class="exo-2-logo-font">Password</label>
-                                <input type="password" name="password-input" id="password-input">
-                            </div>
-                            <button type="submit" id="login-button" class="exo-2-logo-font">Iniciar Sesion</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+    <main >
+        <section id="dashboard-container">
+            <iframe title="practica" id="dashboard" 
+                src="https://app.powerbi.com/view?r=eyJrIjoiOTlmNjNjYTAtZjNhNC00MTM3LTgzZDEtOGNiNGU3ZDNiM2M4IiwidCI6ImU0MTExNWM4LTlmMTUtNDlkNy1iZTBkLWJjNGQ1OTY3MWJiNiIsImMiOjR9"
+                frameborder="0" allowFullScreen="true"></iframe>
         </section>
     </main>
     <footer>
@@ -116,5 +100,5 @@
         </div>
     </footer>
 </body>
-<script src="/assets/js/header.js"></script>
+<script src="./assets/js/header.js"></script>
 </html>

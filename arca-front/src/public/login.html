@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arca Dashboard</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="icon" href="/assets/images/deadpool_logo.png">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="icon" href="./assets/images/Arca_Continental_logo.png">
 
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +28,7 @@
         <div id="header-container">
             <div id="logo-container">
                 <a href="/index.html" id="logo">
-                    <img src="/assets/images/deadpool_logo.png" alt="deadpool_logo" width="40px">
+                    <img src="./assets/images/AC_logo.png" alt="arca_logo" height="40px">
                     <h3 class="exo-2-logo-font">ARCA DASHBOARD</h3>
                 </a>
             </div>
@@ -42,55 +43,39 @@
                 </nav>
             </div>
             <div id="buttons-container">
-                <a href="login.html" class="login-font" id="login">Login</a>
+                <a href="login.html" class="exo-2-logo-font login-font" id="login">Login</a>
                 <label class="menu-collapse-btn" for="menu-toggle">
                     <div class="hamburger-menu">
-                        <img src="/assets/icons/menu.svg" alt="menu-bars">
+                        <img src="./assets/icons/menu.svg" alt="menu-bars">
                     </div>
                     <div class="hidden close-menu">
-                        <img src="/assets/icons/close.svg" alt="close">
+                        <img src="./assets/icons/close.svg" alt="close">
                     </div>
                 </label>
             </div>
         </div>
     </header>
     <main>
-        <!-- banner 1 -->
-        <section class="banner">
-            <div class="banner-left-text">
-                <h3 class="exo-2-logo-font banner-title">Innovación Educativa a Través de la Práctica Empresarial</h3>
-                <p class="exo-2-logo-font banner-description">Como parte de una alianza estratégica entre Arca Continental y
-                    Kruger School X, se fomenta la
-                    colaboración para que los estudiantes participen en casos reales, aplicando y desarrollando sus habilidades
-                    en
-                    un entorno empresarial.</p>
-            </div>
-            <div class="banner-div-img">
-                <img src="/assets/images/colaboracion.png" alt="colaboracion-image" class="banner-image">
-            </div>
-        </section>
-
-        <!-- banner 2 -->
-        <section class="banner">
-            <div class="banner-div-img">
-                <img src="/assets/images/deadpool_logo.png" alt="colaboracion-image" class="banner-image">
-            </div>
-            <div class="banner-right-text">
-                <h3 class="exo-2-logo-font banner-title">Desafíos Empresariales: Compite, Colabora y Crece</h3>
-                <p class="exo-2-logo-font banner-description">Fomentamos la competitividad, el espíritu deportivo y la colaboración entre estudiantes, preparándolos para enfrentar
-                con éxito los desafíos del entorno empresarial.</p>
-            </div>
-        </section>
-
-        <!-- banner 3 -->
-        <section class="banner">
-            <div class="banner-left-text">
-                <h3 class="exo-2-logo-font banner-title">Optimización Empresarial a través de Análisis de Datos</h3>
-                <p class="exo-2-logo-font banner-description">La solución presentada por el equipo <span class="deadpool-font" style="color: var(--arca-red);">deadpool</span> se fundamenta en el análisis de datos, visualizados a través de
-                    un dashboard interactivo, con el objetivo de optimizar la toma de decisiones en las áreas comercial y de producción.</p>
-            </div>
-            <div class="banner-div-img">
-                <img src="/assets/images/dashboard.png" alt="colaboracion-image" class="banner-image">
+        <section>
+            <div id="login-container">
+                <div>
+                    <h3 class="exo-2-logo-font">Inicio de Sesion</h3>
+                </div>
+                <div>
+                    <form onsubmit="login(event)">
+                        <div id="login-form-div">
+                            <div>
+                                <label for="useremail" id="useremail-label" class="exo-2-logo-font">Email</label>
+                                <input type="text" name="useremail" id="useremail-input">
+                            </div>
+                            <div>
+                                <label for="password" id="password-label" class="exo-2-logo-font">Password</label>
+                                <input type="password" name="password-input" id="password-input">
+                            </div>
+                            <button type="submit" id="login-button" class="exo-2-logo-font">Iniciar Sesion</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
@@ -131,30 +116,5 @@
         </div>
     </footer>
 </body>
-<script src="/assets/js/header.js"></script>
-
-<script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-        apiKey: "AIzaSyBlx2-BsARvRTMnCLZE6cyAaYLPHEGVqRg",
-        authDomain: "arca-front.firebaseapp.com",
-        projectId: "arca-front",
-        storageBucket: "arca-front.appspot.com",
-        messagingSenderId: "498923063636",
-        appId: "1:498923063636:web:64a42eae70e05b2fb960c1",
-        measurementId: "G-NGVVT3JSS4"
-    };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-</script>
-
+<script src="./assets/js/header.js"></script>
 </html>

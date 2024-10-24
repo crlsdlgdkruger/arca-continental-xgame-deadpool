@@ -1,8 +1,10 @@
 header {
     position: sticky;
-    background-color: var(--arca-red);
+    background-color: var(--white);
     z-index: 999;
     top: 0;
+    box-shadow: 20px 20px 60px #d8d8d8,
+        -20px -20px 60px #ffffff;
 }
 
 header #header-container {
@@ -33,7 +35,7 @@ header #logo-container h3 {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    color: #fff;
+    color: black;
     margin: 0;
 }
 
@@ -55,23 +57,28 @@ header ul li a {
     padding: 10px 15px;
 }
 
-header ul li a:hover,
-#logo-container:hover {
-    color: var(--arca-red);
-    background-color: black;
+header ul li a:hover {
+    background-color: var(--arca-red);
+    color: white;
     border-radius: 5px;
     font-weight: 600;
     transition: all 0.5s ease;
 }
 
+#logo-container:hover{
+    /* border: 1px solid black;
+    box-sizing: border-box; */
+}
+
 #logo-container:hover h3 {
-    color: var(--arca-red);
+    transform: scale(1.05);
+    transition: all 0.2s ease;
 }
 
 #login {
     padding: 3px 15px;
-    background-color: transparent;
-    color: black;
+    background-color: var(--arca-red);
+    color:white;
     border: 1px solid black;
     cursor: pointer;
     text-decoration: none;
@@ -79,13 +86,13 @@ header ul li a:hover,
 
 #login:hover {
     background-color: black;
-    color: white;
+    color: var(--arca-red);
     transition: all 0.5s ease;
 }
 
 .menu-collapse-btn {
     display: none;
-    height: 36px;
+    height: 30px;
     margin-left: 10px;
     padding: 0 3px;
     border: 1px solid black;
@@ -93,18 +100,13 @@ header ul li a:hover,
 }
 
 .menu-collapse-btn img {
-    height: 30px;
+    height: 28px;
     color: black;
     fill: currentColor;
 }
 
 .login-font {
-    font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 25px;
-    margin: 0;
+    font-size: 20px;
 }
 
 #buttons-container {
@@ -133,7 +135,7 @@ header ul li a:hover,
         position: absolute;
         top: 74px;
         right: -130px;
-        background-color: var(--arca-red);
+        background-color: white;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -151,9 +153,7 @@ header ul li a:hover,
     }
 
     .menu-collapse-btn {
-        display: flex;
-        align-items: end;
-        
+        display: flex;        
     }
 
     header #header-container {
