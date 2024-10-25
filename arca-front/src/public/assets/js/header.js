@@ -20,21 +20,21 @@ function showLinksByRol() {
     const userLogged = JSON.parse(localStorage.getItem('userLogged'));
     console.log('user', userLogged);
     const comercialLink = document.getElementById('comercial-link');
-    const produccionLink = document.getElementById('produccion-link');
+    const logisticaLink = document.getElementById('logistica-link');
     if (userLogged) {
         const rol = userLogged.rol;
         if (rol === 'comercial') {
             comercialLink.classList.remove('hidden');
-            produccionLink.classList.add('hidden');
-        } else if (rol === 'produccion') {
+            logisticaLink.classList.add('hidden');
+        } else if (rol === 'logistica') {
             comercialLink.classList.add('hidden');
-            produccionLink.classList.remove('hidden');
+            logisticaLink.classList.remove('hidden');
         }
         showLogoutButton();
     }
     else {
         comercialLink.classList.add('hidden');
-        produccionLink.classList.add('hidden');
+        logisticaLink.classList.add('hidden');
         showLoginButton();
     }
 }

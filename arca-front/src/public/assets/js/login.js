@@ -5,9 +5,9 @@ document.getElementById('login-form').addEventListener('submit', (event) => {
         password: 'usercomercial',
         rol: 'comercial',
     }, {
-        email: 'userproduccion@arcacontinental.com',
-        password: 'userproduccion',
-        rol: 'produccion',
+        email: 'userlogistica@arcacontinental.com',
+        password: 'logistica',
+        rol: 'logistica',
     }];
 
     const email = document.getElementById('useremail-input').value;
@@ -17,9 +17,9 @@ document.getElementById('login-form').addEventListener('submit', (event) => {
     if (user) {
         if (user.rol === 'comercial') {
             window.location.href = './comercial.html';
-            document.getElementById('produccion-link').classList.add('hidden');
+            document.getElementById('logistica-link').classList.add('hidden');
         } else {
-            window.location.href = './produccion.html';
+            window.location.href = './logistica.html';
             document.getElementById('comercial-link').classList.add('hidden');
         }
     } else {
