@@ -42,12 +42,12 @@ function urlBase64ToUint8Array(base64String) {
 }
 
 const checkLowInventory = (data = null) => {
-    console.log('Checking inventory...');
+    // console.log('Checking inventory...');
     if (data) {
         const ages = data.map(item => item['edad']);
         const averageAge = ages.reduce((a, b) => a + b, 0) / ages.length;
-        console.log('Edades', ages, 'Promedio', averageAge);
-        if (averageAge < 30) {
+        // console.log('Edades', ages, 'Promedio', averageAge);
+        if (averageAge < 20) {
             sendNotification();
         }
     }

@@ -38,14 +38,15 @@
                 <input type="checkbox" id="menu-toggle" class="hidden" onchange="toggleMenuCollapseIcon()">
                 <nav id="menu">
                     <ul class="">
-                        <li><a href="index.html" class="exo-2-logo-font">INICIO</a></li>
-                        <li><a href="comercial.html" class="exo-2-logo-font">COMERCIAL</a></li>
-                        <li><a href="produccion.html" class="exo-2-logo-font">PRODUCCION</a></li>
+                        <li id="inicio-link"><a href="index.html" class="exo-2-logo-font">INICIO</a></li>
+                        <li id="comercial-link"><a href="comercial.html" class="exo-2-logo-font">COMERCIAL</a></li>
+                        <li id="produccion-link"><a href="produccion.html" class="exo-2-logo-font">PRODUCCION</a></li>
                     </ul>
                 </nav>
             </div>
             <div id="buttons-container">
                 <a href="login.html" class="exo-2-logo-font login-font" id="login">Login</a>
+                <a href="index.html" class="exo-2-logo-font login-font hidden" id="logout" onclick="logout()">Logout</a>
                 <label class="menu-collapse-btn" for="menu-toggle">
                     <div class="hamburger-menu">
                         <img src="./assets/icons/menu.svg" alt="menu-bars">
@@ -62,8 +63,8 @@
             <!-- <iframe title="practica" id="dashboard" 
                 src="https://app.powerbi.com/view?r=eyJrIjoiOTlmNjNjYTAtZjNhNC00MTM3LTgzZDEtOGNiNGU3ZDNiM2M4IiwidCI6ImU0MTExNWM4LTlmMTUtNDlkNy1iZTBkLWJjNGQ1OTY3MWJiNiIsImMiOjR9"
                 frameborder="0" allowFullScreen="true"></iframe> -->
-                <iframe title="XGAMES_PROJECT" id="dashboard"
-                    src="https://app.powerbi.com/view?r=eyJrIjoiOTFlODQyNzAtNDNkNi00NjE1LTkzMDUtNzJlMGYzYmJhMGM1IiwidCI6ImU0MTExNWM4LTlmMTUtNDlkNy1iZTBkLWJjNGQ1OTY3MWJiNiIsImMiOjR9"
+                <iframe title="ArcaContinentalComercial" id="dashboard"
+                    src="https://app.powerbi.com/view?r=eyJrIjoiN2NiMTgxMWYtNDIwYi00MWExLTgzZjEtYmJkZmJmNWZhMGZmIiwidCI6IjhjYTUyZTJiLTFkMjAtNDI3NC05YTEzLWJkNzZlY2NiODFkMSIsImMiOjR9&pageName=8e59d2511c92a16de03d"
                     frameborder="0" allowFullScreen="true"></iframe>
         </section>
     </main>

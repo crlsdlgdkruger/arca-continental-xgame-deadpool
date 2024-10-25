@@ -37,14 +37,15 @@
                 <input type="checkbox" id="menu-toggle" class="hidden" onchange="toggleMenuCollapseIcon()">
                 <nav id="menu">
                     <ul class="">
-                        <li><a href="index.html" class="exo-2-logo-font">INICIO</a></li>
-                        <li><a href="comercial.html" class="exo-2-logo-font">COMERCIAL</a></li>
-                        <li><a href="produccion.html" class="exo-2-logo-font">PRODUCCION</a></li>
+                        <li id="inicio-link"><a href="index.html" class="exo-2-logo-font">INICIO</a></li>
+                        <li id="comercial-link"><a href="comercial.html" class="exo-2-logo-font">COMERCIAL</a></li>
+                        <li id="produccion-link"><a href="produccion.html" class="exo-2-logo-font">PRODUCCION</a></li>
                     </ul>
                 </nav>
             </div>
             <div id="buttons-container">
                 <a href="login.html" class="exo-2-logo-font login-font" id="login">Login</a>
+                <a href="index.html" class="exo-2-logo-font login-font hidden" id="logout" onclick="logout()">Logout</a>
                 <label class="menu-collapse-btn" for="menu-toggle">
                     <div class="hamburger-menu">
                         <img src="./assets/icons/menu.svg" alt="menu-bars">
@@ -63,7 +64,7 @@
                     <h3 class="exo-2-logo-font">Inicio de Sesion</h3>
                 </div>
                 <div>
-                    <form onsubmit="login(event)">
+                    <form id="login-form">
                         <div id="login-form-div">
                             <div>
                                 <label for="useremail" id="useremail-label" class="exo-2-logo-font">Email</label>
@@ -118,4 +119,5 @@
     </footer>
 </body>
 <script src="./assets/js/header.js"></script>
+<script src="./assets/js/login.js"></script>
 </html>

@@ -75,7 +75,7 @@ header ul li a:hover {
     transition: all 0.2s ease;
 }
 
-#login {
+#login, #logout {
     padding: 3px 15px;
     background-color: var(--arca-red);
     color:white;
@@ -84,7 +84,7 @@ header ul li a:hover {
     text-decoration: none;
 }
 
-#login:hover {
+#login:hover, #logout:hover {
     background-color: black;
     color: var(--arca-red);
     transition: all 0.5s ease;
