@@ -52,3 +52,22 @@ Para cerrar sesión, con un usuario activo:
 
 1. Dirígete a la esquina superior derecha de la página.
 2. Haz clic en el botón **"Logout"**. Serás redirigido a la página de inicio.
+
+
+## Tecnologias Utilizadas
+
+### Herramientas
+1. **Power Bi** - Para análisis de datos y visualización.
+2. **Excel** - Gestión y limpieza de datos.
+3. **JavaScript (ECMAScript 6)** -  Desarrollo de la lógica del frontend y backend.
+4. **HTML 5** - Estructura del contenido del sitio.
+5. **CSS 3** - Estilización y diseño del sitio web.
+
+### Complementos y Librerias
+1. **Power Bi Service** -  Servicio de Power BI para compartir y publicar informes.
+2. **Node.js 20** -  Entorno de ejecución para JavaScript en el backend.
+3. **Dotenv 16** - Gestión de variables de entorno para la configuración segura.
+4. **Express 4** - Framework de Node.js para crear el servidor y manejar rutas.
+5. **Morgan 1** - Middleware para registrar solicitudes HTTP en el servidor.
+6. **Web-Push 3** - Implementación de notificaciones push en el navegador.
+7. **XLSX** - Manejo de archivos Excel para el procesamiento y análisis de datos.
