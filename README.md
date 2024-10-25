@@ -24,3 +24,31 @@ Una vez en la raíz del proyecto, ejecuta el siguiente comando:
 ```sh
 node ./src/index.js
 ```
+## Uso
+
+### Inicio
+1. Asegúrate de haber iniciado el proyecto siguiendo los pasos de **Instalación**.
+2. Una vez iniciado, abre tu navegador y accede a [http://localhost:3000/index.html](http://localhost:3000/index.html).
+
+### Inicio de Sesión
+1. Haz clic en el botón **"Login"** en la esquina superior derecha de la página de inicio. Serás redirigido a la página de inicio de sesión.
+
+2. Para iniciar sesión, puedes probar con los siguientes usuarios de ejemplo:
+
+    * Usuario de Logística
+
+        * **Correo:** userlogistica@arcacontinental.com
+        * **Contraseña:** logistica
+        Este usuario tiene permisos para visualizar datos específicos del área de logística.
+
+    * Usuario Comercial
+
+        * **Correo:** usercomercial@arcacontinental.com
+        * **Contraseña:** usercomercial
+        Este usuario tiene permisos para visualizar datos relevantes al área comercial.
+
+### Cerrar Sesión
+Para cerrar sesión, con un usuario activo:
+
+1. Dirígete a la esquina superior derecha de la página.
+2. Haz clic en el botón **"Logout"**. Serás redirigido a la página de inicio.
