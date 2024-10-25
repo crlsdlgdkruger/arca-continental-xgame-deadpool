@@ -1,4 +1,3 @@
-
 console.log('service worker');
 
 self.addEventListener('push', (event) => {

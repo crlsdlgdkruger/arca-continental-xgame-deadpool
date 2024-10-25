@@ -41,4 +41,34 @@ function urlBase64ToUint8Array(base64String) {
     return outputArray;
 }
 
+const checkLowInventory = (data = null) => {
+    console.log('Checking inventory...');
+    if (data) {
+        const ages = data.map(item => item['edad']);
+        const averageAge = ages.reduce((a, b) => a + b, 0) / ages.length;
+        console.log('Edades', ages, 'Promedio', averageAge);
+        if (averageAge < 30) {
+            sendNotification();
+        }
+    }
+}
+
+const sendNotification = () => {
+    fetch('/send-notification', {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    });
+}
+
 subscription();
+setInterval(async () => {
+    try {
+        const response = await fetch('/inventory-status');
+        const data = await response.json();
+        checkLowInventory(data)
+    } catch (error) {
+        console.error(error);
+    }
+}, 60000);
