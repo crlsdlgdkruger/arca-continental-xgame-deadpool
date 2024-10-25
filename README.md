@@ -82,6 +82,6 @@ Para cerrar sesión, con un usuario activo:
 * Andrea Alvear
 * Omar Valencia
 * Carlos Delgado
-* Marcos 
+* Marcos Plata Barahona
 * Cristian Armijos
 * Lucia Rojas
