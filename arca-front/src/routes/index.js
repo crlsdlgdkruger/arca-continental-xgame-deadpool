@@ -26,7 +26,7 @@ router.post('/send-notification', async (req, res) => {
 
 router.get('/inventory-status', (req, res) => {
     console.log('Checking inventory...');
-    const excelFilePath = path.join(__dirname, './../../data/test.xlsx');
+    const excelFilePath = path.join(__dirname, './../../data/BD_ARCACONTINENTAL.xlsx');
     const loader = new ExcelLoader(excelFilePath);
     const data = loader.loadSheet();
     res.status(200).json(data);

@@ -7,7 +7,7 @@ class ExcelLoader {
         this.filePath = fileName;
     }
 
-    loadSheet(sheetIndex = 0) {
+    loadSheet(sheetIndex = 4) { //0 en el caso de la hoja 1
         const file = fs.readFileSync(this.filePath);
         const workbook = XLSX.read(file, { type: 'buffer' });
         const sheetName = workbook.SheetNames[sheetIndex];

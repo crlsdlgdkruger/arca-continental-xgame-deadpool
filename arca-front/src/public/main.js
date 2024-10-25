@@ -42,12 +42,10 @@ function urlBase64ToUint8Array(base64String) {
 }
 
 const checkLowInventory = (data = null) => {
-    // console.log('Checking inventory...');
+    console.log('Checking inventory...');
     if (data) {
-        const ages = data.map(item => item['edad']);
-        const averageAge = ages.reduce((a, b) => a + b, 0) / ages.length;
-        // console.log('Edades', ages, 'Promedio', averageAge);
-        if (averageAge < 20) {
+        console.log('Dias restantes de inventario', data[4].__EMPTY);//4 por donde se encuentran los dias restantes de inventario
+        if (data[4].__EMPTY < 6) { //Enviamos notificacion si los dias restantes de inventario son menores a 6
             sendNotification();
         }
     }
@@ -71,4 +69,4 @@ setInterval(async () => {
     } catch (error) {
         console.error(error);
     }
-}, 60000);
+}, 60000);//comprueba cada minuto
